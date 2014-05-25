@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app>
+    <head>
+        <meta charset="UTF-8"/>
+        <script src="angular.min.js"></script>
+        <script src="al-bhed.js"></script>
+        <title>English to Al-bhed converter</title>
+    </head>
+    <body>
+      <div ng-controller="albhedTranslateCtrl">
+        <noscript>
+          <p>
+            Please note that this page needs to have JavaScript
+            enable. <a href="http://www.enable-javascript.com/" target="_blank">Click here for instructions in how to enable javascript for your browser.</a>
+          </p>
+        </noscript>
+        <p>Write in the box below the text that you want to translate
+        <h2>English</h2>
+        <textarea ng-model="english" rows="10" cols="50" placeholder="Write in English here"></textarea>
+        <br />
+        <h2>Al-bhed</h2>
+        <textarea ng-model="albhed" rows="10" cols="50" placeholder="Write in Al-bhed here"></textarea>
+      </div>
+    </body>
+</html>
